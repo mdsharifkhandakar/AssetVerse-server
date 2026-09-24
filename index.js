@@ -46,8 +46,8 @@ const port = process.env.PORT || 3000;
 
 // Middleware
 const allowedOrigins = [
-  // add your production frontend domain here later
-  "http://localhost:5173"               // local dev
+  'http://localhost:5173',
+  'https://assetverse-client.netlify.app',
 ];
 
 app.use(cors({
