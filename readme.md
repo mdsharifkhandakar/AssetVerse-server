@@ -179,4 +179,50 @@ and the local development origin:
 ``` text
 http://localhost:5173
 ```
+## Authentication
+
+Firebase Admin SDK is used on the server to verify Firebase ID tokens.
+
+Protected operations use authentication and HR role verification where
+required.
+
+## API Areas
+
+The backend provides API routes for:
+
+``` text
+/users
+/assets
+/requests
+/assigned-assets
+/employee-affiliation
+/packages
+/payments
+```
+
+The exact endpoint parameters and response structures are maintained in
+the server source code.
+
+## Security
+
+-   Secrets are stored in environment variables.
+-   Firebase service-account credentials are not hardcoded.
+-   MongoDB credentials are not hardcoded.
+-   Protected operations use authentication and role checks where
+    implemented.
+-   CORS is configured for local development and the production
+    frontend.
+
+## Assignment
+
+This backend is part of the AssetVerse Corporate Asset Management System
+assignment.
+
+The server supports the required HR and Employee asset-management
+workflow, including company assets, employee requests, approvals,
+affiliations, assigned assets, packages, and payment-related data.
+
+## License
+
+This project is created for educational and portfolio purposes.
 
